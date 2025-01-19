@@ -48,6 +48,26 @@
             text-align: center;
             margin-top: 10px;
         }
+        
+        .tab-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: white;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+        }
+        .tab-bar a {
+            text-decoration: none;
+            color: #007bff;
+            text-align: center;
+        }
+        .tab-bar i {
+            font-size: 24px;
+        }
     </style>
 </head>
 <body>
@@ -62,6 +82,10 @@
         </div>
     </div>
 
+    <div class="tab-bar" id="tab-bar">
+        <a href=".."><i class="fas fa-home"></i><br>Home</a>
+        
+    </div>
     <script>
         const authContainer = document.getElementById('auth-container');
         const formTitle = document.getElementById('form-title');
